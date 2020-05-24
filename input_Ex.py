@@ -20,3 +20,4 @@ print(type(age))
 curr_year = date.today()
 print(f"\n You will be 100yrs old on year: {(curr_year.year)-age + 100}")
 
+
