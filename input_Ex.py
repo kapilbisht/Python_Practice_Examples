@@ -18,6 +18,7 @@ print(type(age))
 #  Create a program that asks the user to enter their name and their age.
 #  Print out a message addressed to them that tells them the year that they will turn 100 years old.
 curr_year = date.today()
-print(f"\n You will be 100yrs old on year: {(curr_year.year)-age + 100}")
+print(f"\n You will be 100yrs old on year: {(curr_year.year)-age + 100}")  # calculate and print the message.
+
 
 
