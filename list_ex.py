@@ -39,3 +39,26 @@ list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
 list1[2][2].append(7000)
 list1[2].append(600)
 print(list1)
+
+# adding sublist
+list1 = ["a", "b", ["c", ["d", "e", ["f", "g"], "k"], "l"], "m", "n"]
+sub_list = ["h", "i", "j"]
+list1[2][1][2].extend(sub_list)  # extending the no of elements within the list
+print(list1)
+
+# find the value in list and replace it with another
+list1 = [5, 10, 15, 20, 25, 50, 20]
+index = list1.index(20)
+list1[index] = 200
+print(list1)
+
+# Given a Python list, remove all occurrence of 20 from the list
+list1 = [5, 10, 15, 20, 25, 50, 20]
+
+
+def remove_value(templist, value):
+    return[x for x in templist if x != value ]
+
+
+newList = remove_value(list1, 20)
+print(newList)
