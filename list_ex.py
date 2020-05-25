@@ -28,3 +28,14 @@ list1 = [1, 2, 3, 4, 5]
 list2 = [100, 200, 300, 400, 500]
 for x, y in zip(list1, list2[::-1]):
     print(x, y)
+
+# remove empty strings from the list
+list1 = ["Mike", "", "Emma", "Kelly", "", "Brad"]
+reformated_list = list(filter(None,list1))  # used filter() to filter the empty strings
+print(reformated_list)
+
+# append() method
+list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+list1[2][2].append(7000)
+list1[2].append(600)
+print(list1)
